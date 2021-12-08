@@ -2,7 +2,7 @@ version: '3'
 
 services:
     backend:
-        build: ./backend
+        image: vladthesav/gpt2_onion_generator_api:api
         expose: 
             - 3500
         ports:
@@ -10,7 +10,7 @@ services:
         #volumes: ./backend:/app
 
     frontend:
-        build: ./frontend
+        image: vladthesav/gpt2_onion_generator_frontend:latest
         expose:
             - 3000
         ports:
