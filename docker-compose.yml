@@ -2,7 +2,7 @@ version: '3'
 
 services:
     backend:
-        image: vladthesav/gpt2_onion_generator_api:api
+        image: vladthesav/gpt2_onion_generator_api:latest
         expose: 
             - 3500
         ports:
