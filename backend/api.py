@@ -18,8 +18,8 @@ def pred():
     text = data['text']
 
     #run through GPT2
-    prediction = predict(text, len_sequence=100)
-    #prediction = str(prediction).replace("<|endoftext|>", "")
+    prediction = predict(text, len_sequence=150)
+    prediction = str(prediction).replace("<|endoftext|>", "")
     return jsonify({'output':prediction.decode("utf-8")})
 
 if __name__ == '__main__':

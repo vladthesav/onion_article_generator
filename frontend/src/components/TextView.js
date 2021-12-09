@@ -31,7 +31,7 @@ const TextView = ({title}) => {
                 <label>
                     <input type="text" name="input" 
                     onChange={e => setInput(e.target.value)} 
-                    placeholder="Thou mother is"/>
+                    placeholder="Florida man"/>
                 </label>
             </form>
             <p>{output}</p>
