@@ -2,7 +2,7 @@ import Button from './Button'
 import React, { useState } from 'react';
 
 const TextView = ({title}) => {
-    const [input, setInput] = useState('Thou mother is');
+    const [input, setInput] = useState('Florida man');
     const [output, setOutput] = useState('')
 
     const apiRequest = (e) => {

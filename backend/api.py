@@ -19,8 +19,9 @@ def pred():
 
     #run through GPT2
     prediction = predict(text, len_sequence=150)
-    prediction = str(prediction).replace("<|endoftext|>", "")
-    return jsonify({'output':prediction.decode("utf-8")})
+   # prediction = str(prediction).replace("<|endoftext|>", "")
+    prediction = prediction.decode("utf-8").replace("<|endoftext|>", "")
+    return jsonify({'output':prediction})
 
 if __name__ == '__main__':
     app.run(debug=True, port=3500,host='0.0.0.0')
